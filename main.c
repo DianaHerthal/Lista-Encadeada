@@ -4,6 +4,8 @@
 
 
 int main() {
+    int op = 1;
+    while (op==1){
 	Lista l;
 	iniciar_lista(&l);
 
@@ -20,10 +22,12 @@ int main() {
     printf("PRED->proximo: %d\n", (pre->prox)->chave);
 
 
-    remover_kesimo_elemento_lista(&l, 11);
+    remover_kesimo_elemento_lista(&l, 2);
     imprimir_lista(&l);
 
     destruir_lista(&l);
+    scanf("%d", &op);
+    }
 	return 0;
 }
 
